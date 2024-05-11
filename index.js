@@ -1,8 +1,11 @@
-// app.js
+
 const express = require('express');
 const app = express();
+//register, login, getting token
 const userRoutes = require('./routes/authRoutes');
+//task update delete save
 const taskRoutes = require('./routes/taskRoutes');
+//loads environment variable
 const dotenv = require('dotenv');
 
 app.use(express.json());
